@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosso 1o HTML</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <div id="page">
+    <header>
+        <h1>Nome do Meu Site</h1>
+        <a href="*">Contato</a> 
+    </header>
+    <body>
+        
+        <p class="vermelinho gigante"><strong>Teste de texto na aula</strong></p>
+        <p class="cinza">Teste de texto<br>na aula</p>
+        <p>Se vc deseja acessar nosso site <a href="https://www.cocacola.com.br">clique aqui</a></p>
+
+        <form action="https://postman-echo.com/post" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" placeholder="Informe seu nome" required="required">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" placeholder="Informe seu e-mail" required="required">
+        </div>
+        <div>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required="required">
+            <option value="">Selecione um estado</option>
+            <option value="SC">Santa Caralha</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="CR">Curitola</option>
+            </select>
+        </div>
+        <div>
+            <h3>Deseja receber informações?</h3>
+        </div>
+        <div class="input-radio">
+            <input type="radio" id="info-sim"
+            name="info" value="sim" required />
+            <label for="info-sim">Sim</label>
+        </div>
+        <div class="input-radio">
+            <input type="radio" id="info-nao"
+            name="info" value="não" required />
+            <label for="info-nao">Não</label>
+        </div>
+        <div class="row-button">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </div>
+        </form>
+        <table border="1">
+            <tr>
+                <th>None</th>
+                <th>E-mail</th>
+                <th>CPF</th>
+
+            </tr>
+            <tr>
+                <td>Teste 1</td>
+                <td>Teste 2</td>
+                <td>Teste 3</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">Teste 5</td>
+            </tr>
+            <tr>
+                <td>Teste 7</td>
+                <td>Teste 8</td>
+                <td>Teste 9</td>
+            </tr>
+        </table>
+    </body>
+    </div>
+</html>
