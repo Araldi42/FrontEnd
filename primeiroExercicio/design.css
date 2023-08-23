@@ -1,0 +1,94 @@
+header h1 {
+    font-size: 18px 16px 20px;
+    border: 7px ridge #040404;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    background-color: #A6E3E9;
+    color: #000000;
+    margin-bottom: 16px;
+    border-radius: 6px;
+
+}
+
+#chat-screen {
+    max-width: 720px;
+    min-width: 360px;
+    margin: 0 auto;
+}
+
+.messages-list {
+    background-color: #CBF1F5;
+    border: 2px solid #9E9FA5;
+    margin: 20px 16px 20px 16px;
+    padding: 30px 26px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.msg-chat {
+    border: 5px double #000000;
+    padding: 5px;
+    border-radius: 8px;
+    display: inline-flex;
+
+}
+.message-item-message-user{
+    text-align: right;
+}
+form {
+    display: flex;
+    text-align:center;
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+form input {
+    border: 1.5px solid #9E9FA5;
+    flex: 0.99;
+    font-size: 15px;
+    padding: 7px 10px;
+    outline: 0;
+    border-radius: 8px;
+
+}
+form button {
+    border: 0;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #CBF1F5;
+    color: #000000;
+    cursor: pointer;
+}
+
+.button-with-arrow {
+    position: relative;
+    padding: 6px 12px;
+    background-color: #CBF1F5;
+    color: #000000;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-with-arrow::after {
+    content: "\2192"; /* Código da entidade para a seta para a direita */
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
