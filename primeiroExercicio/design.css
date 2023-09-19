@@ -23,6 +23,8 @@ body {
     max-width: 720px;
     min-width: 360px;
     margin: 0 auto;
+    overflow: auto;
+    list-style-type: disc;
 }
 
 .messages-list {
@@ -32,6 +34,7 @@ body {
     padding: 30px 26px;
     border-radius: 12px;
     margin-bottom: 16px;
+    list-style-type: disc;
 }
 
 .msg-chat {
