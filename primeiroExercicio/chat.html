@@ -21,11 +21,11 @@
           <div class="msg-user"><strong>Atendente diz:</strong></div>
           <div class="msg-chat">Blabla blabla blabla?</div>
         </div>
-        <div class="message-item-message-user">
+        <div class="message-item-message-user" id="message-item-message-user">
           <div class="msg-user"><strong>Você diz:</strong></div>
           <div class="msg-chat">Blablaaaa Bla</div>
         </div>
-        <div class="message-item-message-user">
+        <div class="message-item-message-user" id="message-item-message-user">
           <div class="msg-user"><strong>Você diz:</strong></div>
           <div class="msg-chat">Bla blabla Ba</div>
         </div>
@@ -50,14 +50,41 @@
         
         const newItemName = document.querySelector("#message");
         if (newItemName.value !== "") {
-          const novoItem = document.createElement("li");
-          novoItem.classList.add("py-px");
-          novoItem.innerHTML = `
-            <strong>${newItemName.value}</strong>
+          const itemTeste = document.createElement("div");
+          itemTeste.classList.add("py-px");
+          itemTeste.style.textAlign = "right";
+          itemTeste.style.fontSize = "18px"
+          itemTeste.style.fontFamily = "Segoe UI";
+          itemTeste.innerHTML = `
+            <strong>Você diz:</strong>
           `;
+          const novoItem = document.createElement("div");
+          novoItem.id = "textoNovo"
+          novoItem.classList.add("py-px");         
+          //novoItem.style.textAlign = "right";
+          // ------ pai possui o textAlign
+
+          novoItem.style.textAlign = "right"
           
+          /*novoItem.innerHTML = `
+            ${newItemName.value}
+          `;*/
+          const novoItemFilho = document.createElement("div");
+          novoItemFilho.classList.add("py-px");
+          novoItemFilho.style.fontSize = "18px";
+          novoItemFilho.style.fontFamily = "Segoe UI";
+          novoItemFilho.style.border = "5px double #000000";
+          novoItemFilho.style.padding = "5px";
+          novoItemFilho.style.borderRadius = "8px";
+          novoItemFilho.innerHTML = `
+            ${newItemName.value}
+          `;
+          novoItemFilho.style.display = "inline-flex";
           const lista = document.querySelector("#messages-list");//messages-list
+          //const listaId = document.querySelector("#teste");
+          lista.appendChild(itemTeste);
           lista.appendChild(novoItem);
+          novoItem.appendChild(novoItemFilho);
 
           formItem.reset();
           newItemName.focus();
@@ -65,7 +92,7 @@
       }
       const formItem = document.querySelector("#form-chat-send");    
       formItem.addEventListener("submit", addItem);
-      //coisas para fazer: Ajeitar o elemento que é criado para se comportar como caso de mensagem remetente, formatado
+      //
     </script>
   </body>
 </html>

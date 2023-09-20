@@ -42,6 +42,7 @@ body {
     padding: 5px;
     border-radius: 8px;
     display: inline-flex;
+    text-align: right;
 
 }
 .message-item-message-user{

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Elemento com display: inline-flex e textAlign: right</title>
+    <style>
+        /* Estilos para o elemento criado */
+        .custom-element {
+            display: inline-flex;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <button id="criarElemento">Criar Elemento</button>
+    <div id="container"></div>
+
+    <script>
+        const criarElementoBotao = document.getElementById("criarElemento");
+        const container = document.getElementById("container");
+
+        criarElementoBotao.addEventListener("click", () => {
+            // Criar um novo elemento
+            const novoElemento = document.createElement("div");
+            
+            // Adicionar classe ao novo elemento
+            novoElemento.classList.add("custom-element");
+            
+            // Definir conteúdo de exemplo
+            novoElemento.textContent = "Conteúdo do Elemento";
+
+            // Adicionar o elemento ao container
+            container.appendChild(novoElemento);
+        });
+    </script>
+</body>
+</html>
